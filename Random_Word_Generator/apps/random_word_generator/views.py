@@ -5,10 +5,10 @@ from django.shortcuts import render, HttpResponse, redirect
 from django.utils.crypto import get_random_string
 
 def index(request):
-    if "count" not in request.session:
-        request.session["count"] = 0
-    if "word" not in request.session:
-        request.session["word"] = ""
+    # if "count" not in request.session:
+    #     request.session["count"] = 0
+    # if "word" not in request.session:
+    #     request.session["word"] = ""
     return render(request,'random_word_generator/index.html')
 
 def random_word(request):

@@ -9,7 +9,7 @@
 <body>
     <h1>Random Word (attempt # {{ request.session.count }})</h1>
     <h3>{{ request.session.word }}</h3>
-    <form action="/random_word", method="post">
+    <form action="/random_word", method="POST">
         {% csrf_token %}
         <input type='submit' value='Generate'>
     </form>
