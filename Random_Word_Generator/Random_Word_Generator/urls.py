@@ -18,6 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^', include('apps.random_word_generator.urls')),
-    url(r'random_word/', include('apps.random_word_generator.urls')),
+    # url(r'random_word/', include('apps.random_word_generator.urls')),
     url(r'^admin/', admin.site.urls),
 ]

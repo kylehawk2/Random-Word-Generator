@@ -13,9 +13,10 @@ def index(request):
 
 def random_word(request):
     request.session["word"] = get_random_string(length=14, allowed_chars='ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-    request.session["count"] += 1
+    # request.session["count"] += 1
     return redirect('/')
-
+    # response = "Random Word Route is Working!"
+    # return HttpResponse(response)
 def reset(request):
     del request.session['word']
     del request.session['count']
